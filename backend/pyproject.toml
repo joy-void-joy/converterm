@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+environs = "^9.5.0"
+python-socketio = "^5.9.0"
+pydantic = "^2.4.2"
+pexpect = "^4.8.0"
+devtools = "^0.12.2"
+
+
+[tool.poetry.group.dev.dependencies]
+hypercorn = "^0.14.4"
+mypy = "^1.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

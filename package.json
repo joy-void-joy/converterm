@@ -1,0 +1,22 @@
+{
+  "name": "terminal",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -c cyan,green bun:dev:frontend bun:dev:backend",
+    "dev:frontend": "bun --cwd frontend dev",
+    "dev:backend": "bun --cwd backend dev"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "concurrently": "^8.2.1",
+    "prettier": "^3.0.3",
+    "sass": "^1.68.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "xterm-addon-fit": "^0.8.0"
+  }
+}
